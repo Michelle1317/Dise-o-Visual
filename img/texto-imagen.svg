@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="320" height="320" role="img" aria-label="Proceso de diseño centrado en el usuario">
+  <defs>
+    <style>
+      .ln{ fill:none; stroke:#6C4DD3; stroke-width:2.6; stroke-linecap:round; stroke-linejoin:round; }
+      .fill{ fill:#6C4DD3; }
+      .soft{ fill:#E9E6FA; }
+    </style>
+  </defs>
+  <circle cx="160" cy="160" r="150" class="soft"/>
+  <!-- Ciclo iterativo -->
+  <circle cx="160" cy="160" r="92" class="ln" stroke-dasharray="4 10"/>
+  <!-- Nodos del proceso -->
+  <g>
+    <circle cx="160" cy="68" r="20" class="fill"/>
+    <circle cx="252" cy="160" r="20" class="fill"/>
+    <circle cx="160" cy="252" r="20" class="fill"/>
+    <circle cx="68" cy="160" r="20" class="fill"/>
+  </g>
+  <!-- Persona al centro -->
+  <circle cx="160" cy="150" r="22" class="ln" fill="#fff"/>
+  <circle cx="152" cy="147" r="2.8" class="fill"/>
+  <circle cx="168" cy="147" r="2.8" class="fill"/>
+  <path d="M150 160 q10 9 20 0" class="ln"/>
+  <path d="M132 196 q28 -30 56 0" class="ln"/>
+  <!-- Flechas de iteración -->
+  <path d="M214 110 l8 -2 l-2 8" class="ln"/>
+  <path d="M214 210 l8 2 l-2 -8" class="ln"/>
+</svg>

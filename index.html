@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Wiki Diseño · Experiencia de Usuario (UX): definición, usabilidad, accesibilidad, UX vs UI y proceso de diseño. Proyecto Integrador Etapa 4.">
+  <title>Wiki Diseño · Experiencia de Usuario</title>
+
+  <!-- Tipografías del diseño (Poppins + Roboto) con respaldo del sistema -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="icon" href="img/logo.svg">
+</head>
+<body>
+
+  <!-- ============================ ENCABEZADO ============================ -->
+  <header class="header-wiki" id="inicio">
+
+    <div class="header-superior">
+      <div class="titulo-wiki">
+        <h1>Wiki <span>Diseño</span></h1>
+        <p>Todo sobre diseño en un solo lugar.</p>
+      </div>
+
+      <div class="busqueda-usuario">
+        <div class="barra-busqueda">
+          <img src="img/lupa.svg" alt="Buscar">
+          <input type="text" placeholder="Buscar temas de diseño...">
+        </div>
+        <img class="icono-usuario" src="img/user-icon.svg" alt="Usuario">
+      </div>
+    </div>
+
+    <button class="boton-menu" id="boton-menu" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="menu-temas" id="menu-temas">
+      <a href="#" class="menu-item">
+        <img src="img/user-experience.svg" alt="">
+        <span>Experiencia de usuario</span>
+      </a>
+      <a href="#" class="menu-item">
+        <img src="img/web-design.svg" alt="">
+        <span>Diseño web</span>
+      </a>
+      <a href="#" class="menu-item">
+        <img src="img/design-thinking.svg" alt="">
+        <span>Design thinking</span>
+      </a>
+      <a href="#" class="menu-item">
+        <img src="img/user-focus.svg" alt="">
+        <span>Diseño centrado en el usuario</span>
+      </a>
+      <a href="#" class="menu-item">
+        <img src="img/interactive.svg" alt="">
+        <span>Diseño de interacción</span>
+      </a>
+      <a href="#" class="menu-item">
+        <img src="img/information.svg" alt="">
+        <span>Arquitectura de la información</span>
+      </a>
+      <a href="#" class="menu-item">
+        <img src="img/nav-design.svg" alt="">
+        <span>Diseño de navegación</span>
+      </a>
+      <a href="index.html" class="menu-item activo">
+        <img src="img/visual-design.svg" alt="">
+        <span>Diseño visual</span>
+      </a>
+    </nav>
+  </header>
+
+  <!-- ============================ CONTENIDO ============================ -->
+  <main>
+
+    <!-- HERO -->
+    <section class="hero-tema">
+      <div>
+        <span class="eyebrow">Tema · Diseño Visual</span>
+        <h2>Diseño Visual</h2>
+        <p>
+          El diseño es el lenguaje universal de la funcionalidad. En WikiDiseño, transformamos conceptos complejos en experiencias visuales intuitivas, donde cada elemento, color y tipografía tiene un propósito claro: guiar tu mirada, simplificar tu interacción y elevar la forma en que conectas con el contenido digital.
+        </p>
+
+        <div class="hero-acciones">
+          <a href="#video-ux" class="btn-accion primario">▶ Video intro</a>
+          <a href="#galeria" class="btn-accion secundario">Galería</a>
+        </div>
+
+        <blockquote class="intro-destacada">
+          “El diseño visual es la piedra angular que permite la decodificación efectiva de los mensajes en el entorno digital.”
+          <span>— Desconocido</span>
+        </blockquote>
+      </div>
+      <img src="images/2.jpg" alt="Persona interactuando con una interfaz digital">
+    </section>
+
+    <!-- NAVEGACIÓN INTERNA (anclas) -->
+    <nav class="nav-anclas" id="nav-anclas" aria-label="Navegación dentro de la página">
+      <span class="nav-anclas__titulo">En esta página:</span>
+	  <a href="#intro">Introducción</a>
+      <a href="#conceptos">Conceptos Clave</a>
+      <a href="#video-ux">Proceso de Diseño</a>
+	  <a href="#desarrollo">Desarrollo</a>
+      <a href="#galeria">Galería</a>
+	  <a href="#conclusion">Conclusión</a>
+      <a href="#marco">Fundamentación</a>
+    </nav>
+
+    <!-- TÍTULO SECCIÓN -->
+    <div class="titulo-seccion" id="intro">
+      <h2>Introducción</h2>
+	<p>Revisa los siguientes conceptos para entender mejor la comunicación visual.</p>
+	</div>
+	  
+	<section class="texto-info">
+      <p>
+         La decoración es un accesorio; es un elemento superficial que se añade al final  de un proceso únicamente para cubrir la superficie y maquillar imperfecciones. El diseño, en cambio, no ocurre al final ni funciona de manera reactiva. El diseño es la base estructural y conceptual sobre la que se construye todo lo demás. En otras palabras, debemos entenderlo como auténtica ingeniería visual. Cada elemento que se despliega en una interfaz, en un producto o en la identidad de una marca no está ahí por mera "intuición artística" o azar creativo; está ahí porque cumple rigurosamente con una función matemática de proporción, una regla psicológica de percepción o un requerimiento técnico de usabilidad.
+      </p>
+	  <p>
+		 Por lo tanto, el diseño no es una simple capa estética que busca hacer las cosas "bonitas"; es un lenguaje estratégico integral y un puente con el usuario. Es la herramienta más poderosa que tiene una empresa para traducir objetivos de negocios abstractos en soluciones tangibles, funcionales y medibles, capaces de transformar la experiencia del usuario en un activo de alto valor comercial.
+      </p>
+    </section>
+	
+	<div class="titulo-seccion" id="conceptos">
+      <h2>Conceptos Clave</h2>
+      <p>Cinco ideas para entender de qué trata el Diseño Visual y cómo se diseña.</p>
+    </div>
+		
+   <!-- TARJETAS -->
+    <section class="tarjetas">
+      <article class="card">
+        <div class="contenedor-icono"><img src="img/tipografia.png" alt=""></div>
+        <h3>Tipografía y Legibilidad</h3>
+        <p>No se trata solo de estética, sino de jerarquía informativa. Una tipografía bien aplicada guía la atención del usuario hacia donde realmente importa.</p>
+        <div class="contenido-extra">
+          <p>Dato curioso: El tipo de letra puede alterar el nivel de confianza que un usuario deposita en tu marca en menos de un segundo.</p>
+        </div>
+        <button class="btn-ver-mas" type="button">Ver más</button>
+      </article>
+
+      <article class="card">
+        <div class="contenedor-icono"><img src="img/pantone.png" alt=""></div>
+        <h3>Psicología del Color</h3>
+        <p>El color comunica significados antes de que leamos una sola palabra. Define la atmósfera y el impacto emocional de toda la interfaz.</p>
+        <div class="contenido-extra">
+          <p>Dato curioso: El cerebro humano procesa el color hasta 60,000 veces más rápido que el texto.</p>
+        </div>
+        <button class="btn-ver-mas" type="button">Ver más</button>
+      </article>
+
+      <article class="card">
+        <div class="contenedor-icono"><img src="img/espacio-en-blanco.png" alt=""></div>
+        <h3>Espacio en Blanco</h3>
+        <p>Es el oxígeno del diseño; permite que los elementos respiren y reduce la carga cognitiva del usuario.</p>
+        <div class="contenido-extra">
+          <p>Dato curioso: El uso generoso de espacio en blanco alrededor de textos puede aumentar la comprensión del lector en casi un 20%.</p>
+        </div>
+        <button class="btn-ver-mas" type="button">Ver más</button>
+      </article>
+
+      <article class="card">
+        <div class="contenedor-icono"><img src="img/visual-design.svg" alt=""></div>
+        <h3>Jerarquía Visual</h3>
+        <p>Es el orden lógico de los elementos que dirige la mirada del usuario. Sin ella, el caos visual impide la comprensión y la acción.</p>
+        <div class="contenido-extra">
+          <p>Dato curioso: El patrón de lectura más común en pantallas sigue una forma de "F", ignorando gran parte del contenido lineal.</p>
+        </div>
+        <button class="btn-ver-mas" type="button">Ver más</button>
+      </article>
+
+      <article class="card">
+        <div class="contenedor-icono"><img src="img/design-thinking.svg" alt=""></div>
+        <h3>Usabilidad y Accesibilidad</h3>
+        <p>Un buen diseño garantiza que todos puedan navegar, sin importar sus capacidades técnicas o físicas.</p>
+        <div class="contenido-extra">
+          <p>Dato curioso: La accesibilidad no solo ayuda a personas con discapacidad; beneficia a todos los usuarios, como cuando alguien usa un sitio bajo luz solar intensa.</p>
+        </div>
+        <button class="btn-ver-mas" type="button">Ver más</button>
+      </article>
+    </section>
+
+    <!-- VIDEO + TEXTO -->
+    <section class="seccion-video-texto" id="video-ux">
+      <div class="video-contenedor">
+        <video controls preload="none" poster="images/video 1.png" width="1280" height="720">
+          <source src="video/1.mp4" type="video/mp4">
+		<h3>Aprender a ver el Diseño.</h3>
+        </video>
+      </div>
+      <div class="texto-imagen">
+        <div class="texto-info">
+          <h2>El Proceso de Diseño</h2>
+          <p>
+            Diseñar visualmente no es una elección estética intuitiva, sino un ejercicio de precisión estratégica: se analizan los principios de percepción, se estructura la jerarquía, se aplican sistemas visuales, se implementan soluciones y se ajustan según la respuesta del usuario. Cada iteración refina la claridad y la eficacia de la comunicación.
+          </p>
+          <p class="referencia-video">
+            LearnFree en Español. (2021). La importancia del diseño | Conceptos básicos de diseño gráfico [Video]. Recuperado de: https://youtu.be/aJY0aiYWwLQ?si=iBmATS7YTE7oWof-
+          </p>
+        </div>
+        <img src="images/4.jpg" alt="">
+      </div>
+    </section>
+<section class="contenedor-videos">
+  <div class="item-video">
+    <div class="video-contenedor">
+      <video controls src="video/2.mp4"></video>
+    </div>
+    <h3>¿Por qué el Diseño es Importante?</h3>
+	      <p class="referencia-video">
+            The School of Life. (2015). Por qué el diseño importa [Video]. Recuperado de: https://youtu.be/J6LtABooE2c?si=z4aP7cdwlwlOL9qd
+          </p>
+  </div>
+  <div class="item-video">
+    <div class="video-contenedor">
+      <video controls src="video/3.mp4"></video>
+    </div>
+    <h3>¿Cómo debe pensar un Diseñador?</h3>
+	  	  <p class="referencia-video">
+            Satori Graphics. (2025). ¡Cómo DEBE PENSAR un diseñador gráfico en 2026 para sobrevivir! [Video]. Recuperado de: https://youtu.be/WFkGbyH24AY?si=PP4f6VbpNHRNAGk2
+          </p>
+  </div>
+</section>
+	
+    <div class="titulo-seccion" id="desarrollo">
+      <h2>Desarrollo</h2>
+	<p>Revisa los siguiente información para entender mejor la comunicación visual.</p>
+	</div>
+
+    <section class="texto-info">
+      <p>
+         El cerebro humano es perezoso por naturaleza; está evolutivamente diseñado para ahorrar energía y minimizar el gasto calórico en tareas cognitivas complejas. Cuando el diseño de una interfaz es deficiente, obligamos al usuario a procesar un caos visual innecesario, sobrecargando su memoria de trabajo. Esto no es un problema puramente estético; es fundamentalmente, un problema de rendimiento y usabilidad. El alto esfuerzo cognitivo genera frustración inmediata, la cual se traduce en el abandono de la plataforma, destruyendo las tasas de conversión y la retención. Debemos comprender que el cerebro humano no toma decisiones basadas de forma puramente racional o en datos fríos; de hecho la neurociencia demuestra que el 90% de nuestras decisiones se toman de forma subconsciente y emocional, y es solo después cuando la lógica interviene para justificarlas. Si un producto digital o una marca no logra generar una respuesta emocional inmediata (ya sea a través de una sensación de seguridad, estatus, alivio ante un problema o pertenencia comunitaria) el usuario simplemente no se conecta de ninguna manera. El producto se vuelve invisible para él, perdiéndose en el ruido del ecosistema digital.
+      </p>
+	  <p>
+		 Bajo esta premisa, queda claro que la decoración no es un accesorio secundario; no es algo superfluo que se añade al final del proceso para cubrir la superficie de una estructura ya armada. El diseño, en cambio, no ocurre al final. El diseño estratégico es la base fundamental sobre la que se construye toda la arquitectura de la información y la experiencia del producto. Mientras que la estructura lógica y la reducción del esfuerzo cognitivo logran la viabilidad técnica (que el usuario pueda usar nuestro producto sin perderse), es el tercer pilar el que verdaderamente transforma el comportamiento: la conexión emocional profunda. Este pilar es el que logra que el usuario realmente quiera e interactúe activamente de forma recurrente con la interfaz.
+      </p>
+	  <p>
+		 Por lo tanto, cuando regulamos de forma milimétrica el ritmo visual, el contraste tipográfico, los espacios en blanco y la narrativa de navegación, no lo hacemos con la meta de ganar un premio de arte o diseño. Lo hacemos para activar los mecanismos biológicos e inconscientes de la confianza y la predictibilidad. Una interfaz que se siente familiar y fluida reduce drásticamente la ansiedad del usuario frente a lo desconocido, promoviendo un estado mental de bienestar y apertura. En conclusión, el diseño no es ornamentación; es la herramienta estratégica más poderosa que poseemos para traducir objetivos de negocio abstractos y complejos en soluciones tangibles, intuitivas y altamente rentables.
+      </p>
+    </section>
+
+    <!-- GALERÍA (multimedia con lightbox) -->
+    <div class="titulo-seccion" id="galeria">
+      <h2>Galería</h2>
+      <p>Recursos visuales del tema. Haz clic en una imagen para verla en grande.</p>
+    </div>
+    <section class="galeria-multimedia">
+      <figure class="galeria-item">
+        <img src="images/ejemplo 1.jpg" alt="">
+        <figcaption>Ejemplo</figcaption>
+      </figure>
+      <figure class="galeria-item">
+        <img src="images/ejemplo 2.jpg" alt="">
+        <figcaption>Ejemplo</figcaption>
+      </figure>
+      <figure class="galeria-item">
+        <img src="images/ejemplo 1.jpg" alt="">
+        <figcaption>Ejemplo</figcaption>
+      </figure>	
+    </section>
+	  
+    <div class="titulo-seccion" id="conclusion">
+      <h2>Conclusión</h2>
+	<p>Recuerda que el diseño requiere de un cierre para la efectividad del mensaje.</p>
+	</div>
+	  
+    <section class="texto-info">
+      <p>
+         El diseño no es el maquillaje del proyecto; es su verdadero sistema operativo. La estructura lógica define cómo se sostiene la arquitectura de la información, la reducción del esfuerzo cognitivo garantiza que la navegación funcione sin fricción alguna, y la conexión emocional asegura que el usuario lo elija activamente por encima de cualquier alternativa. No se hace un diseño con el único propósito de que se vea bien en la superficie; se diseña rigurosamente para que funcione en el fondo, convierta objetivos comerciales en acciones reales y trascienda en la mente del consumidor.
+      </p>
+	  <p>
+		 La estética tiene el poder de atraer a primera vista, pero solo la lógica impecable y la emoción genuina retienen a largo plazo. Si reducimos el diseño a una simple decoración, estamos asumiendo erróneamente que nuestro producto es solo superficial y prescindible. Sin embargo, elevarlo a un lenguaje estratégico significa entender que cada píxel optimizado ahorra energía al cerebro del usuario, elimina puntos de dolor y construye, de manera silenciosa, un centímetro más de confianza inquebrantable hacia la marca.
+      </p>
+		
+	<h4>"El buen diseño hace que lo complejo sea lógico, que lo difícil sea sin esfuerzo, y que la estrategia se sienta como una conexión humana".</h4>
+    </section>
+	  
+
+    <!-- MARCO DE VALIDACIÓN Y CONFIABILIDAD TÉCNICO -->
+    <section class="marcos" id="marco">
+      <h2>Marco de Fundamentación y Confiabilidad Técnico</h2>
+      <p>
+        La información presentada en esta página fue recopilada de fuentes académicas, libros
+        especializados y recursos educativos reconocidos sobre experiencia de usuario. Se realizó
+        una revisión de contenido para asegurar la validez, precisión y confiabilidad de los
+        conceptos expuestos, incorporando referencias bibliográficas que permiten verificar cada
+        tema desarrollado.
+      </p>
+      <ul class="referencias">
+        <li>Arnheim, R. (1986). <em>Arte y percepción visual: Psicología del ojo creador.</em> Alianza Editorial.</li>
+        <li>Dondis, D. A. (1984). <em>La sintaxis de la imagen: Introducción al alfabeto visual.</em> Gustavo Gili.</li>
+        <li>Krug, S. (2014). <em>No me hagas pensar: Una aproximación a la usabilidad en la web (3.ª ed.).</em>. Anaya Multimedia.</li>
+        <li>Lupton, E. (2010). <em>Thinking with type: A critical guide for designers, writers, editors, y students.</em> Princeton Architectural Press.</li>
+      </ul>
+    </section>
+  
+
+  <h5>Por Camila Quijano Hidalgo y Michelle Pérez Narváez</h5>
+  <h6>© 2026 WikiDiseño. Todos los derechos reservados.</h6> 
+	 
+  </main>
+
+  <!-- Botón volver arriba -->
+  <button class="btn-arriba" id="btn-arriba" aria-label="Volver al inicio">↑</button>
+
+  <!-- ============================ PIE ============================ -->
+  <footer class="footer-wiki">
+    <div class="footer-logo">
+      <img src="img/logo.svg" alt="Logo Wiki Diseño">
+      <h2>Wiki <span>Diseño</span></h2>
+    </div>
+
+    <div class="footer-links">
+      <a href="#inicio">Inicio</a>
+      <a href="#conceptos">Conceptos</a>
+      <a href="#galeria">Galería</a>
+    </div>
+
+    <div class="footer-links">
+      <a href="#video-ux">Video</a>
+      <a href="#marco">Validación</a>
+    </div>
+
+    <div class="footer-social">
+      <a href="https://www.facebook.com" target="_blank" rel="noopener"><img src="img/fb.svg" alt="Facebook"></a>
+      <a href="https://www.instagram.com" target="_blank" rel="noopener"><img src="img/ig.svg" alt="Instagram"></a>
+      <a href="https://www.youtube.com" target="_blank" rel="noopener"><img src="img/yt.svg" alt="YouTube"></a>
+    </div>
+  </footer>
+
+  <!-- Lightbox de la galería -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox__cerrar" id="lightbox-cerrar" aria-label="Cerrar">×</button>
+    <img class="lightbox__img" id="lightbox-img" src="" alt="Imagen ampliada">
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
