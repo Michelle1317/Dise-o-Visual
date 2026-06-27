@@ -939,3 +939,22 @@ h6{
     grid-template-columns: 1fr;
   }
 /* ¡Asegúrate de cerrar esta llave del media query! */
+/* Elimina o corrige el bloque que tiene un error de sintaxis al final de tu CSS */
+.video-contenedor {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: #000000;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  position: relative; /* Importante para el posicionamiento interno */
+}
+
+.video-contenedor iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none;
+}
