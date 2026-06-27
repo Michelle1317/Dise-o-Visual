@@ -341,3 +341,19 @@
   <script src="js/main.js"></script>
 </body>
 </html>
+
+<script>
+  document.querySelectorAll('.btn-ver-mas').forEach(button => {
+    button.addEventListener('click', () => {
+      const card = button.parentElement;
+      card.classList.toggle('expandida');
+      
+      // Cambiar el texto del botón
+      if (card.classList.contains('expandida')) {
+        button.textContent = 'Ver menos';
+      } else {
+        button.textContent = 'Ver más';
+      }
+    });
+  });
+</script>
