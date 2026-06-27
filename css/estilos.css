@@ -863,10 +863,6 @@ h5{
 h6{
 	color: black;
 	text-align: center;
-}
-
-h3{
-	text-align: center;
 	
 }
 
@@ -893,8 +889,53 @@ h3{
   display: block;
 }
 
+.video-contenedor iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
 @media (max-width: 700px) {
   .contenedor-videos {
     grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
   }
+	
+/* --- CORRECCIÓN FINAL CSS --- */
+
+.contenedor-videos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  padding: 20px;
 }
+
+.item-video {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Contenedor que mantiene la proporción 16:9 */
+.video-contenedor {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: #000;
+  border-radius: 14px;
+  overflow: hidden;
+  position: relative; /* Clave para que el iframe se ajuste */
+}
+
+/* Ajuste para videos locales y de YouTube */
+.video-contenedor video, 
+.video-contenedor iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: none;
+}
+
+@media (max-width: 700px) {
+  .contenedor-videos {
+    grid-template-columns: 1fr;
+  }
+/* ¡Asegúrate de cerrar esta llave del media query! */
