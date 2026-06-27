@@ -133,6 +133,7 @@
 		
    <!-- TARJETAS -->
     <section class="tarjetas">
+		
       <article class="card">
         <div class="contenedor-icono"><img src="img/tipografia.png" alt=""></div>
         <h3>Tipografía y Legibilidad</h3>
@@ -182,6 +183,7 @@
         </div>
         <button class="btn-ver-mas" type="button">Ver más</button>
       </article>
+		
     </section>
 
     <!-- VIDEO + TEXTO -->
@@ -205,27 +207,44 @@
         <img src="images/4.jpg" alt="">
       </div>
     </section>
+	  
 <section class="contenedor-videos">
+  <!-- Video 1 -->
   <div class="item-video">
     <div class="video-contenedor">
-      <video controls src="video/2.mp4"></video>
+      <iframe 
+        src="https://www.youtube.com/embed/J6LtABooE2c" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen>
+      </iframe>
     </div>
     <h3>¿Por qué el Diseño es Importante?</h3>
-	      <p class="referencia-video">
-            The School of Life. (2015). Por qué el diseño importa [Video]. Recuperado de: https://youtu.be/J6LtABooE2c?si=z4aP7cdwlwlOL9qd
-          </p>
+    <p class="referencia-video">
+      The School of Life. (2015). Por qué el diseño importa [Video]. Recuperado de: https://youtu.be/J6LtABooE2c
+    </p>
   </div>
+
+  <!-- Video 2 -->
   <div class="item-video">
     <div class="video-contenedor">
-      <video controls src="video/3.mp4"></video>
+      <iframe 
+        src="https://www.youtube.com/embed/WFkGbyH24AY" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen>
+      </iframe>
     </div>
     <h3>¿Cómo debe pensar un Diseñador?</h3>
-	  	  <p class="referencia-video">
-            Satori Graphics. (2025). ¡Cómo DEBE PENSAR un diseñador gráfico en 2026 para sobrevivir! [Video]. Recuperado de: https://youtu.be/WFkGbyH24AY?si=PP4f6VbpNHRNAGk2
-          </p>
+    <p class="referencia-video">
+      Satori Graphics. (2025). ¡Cómo DEBE PENSAR un diseñador gráfico en 2026 para sobrevivir! [Video]. Recuperado de: https://youtu.be/WFkGbyH24AY
+    </p>
   </div>
 </section>
-	
+
+    <!-- DESARROLLO -->	  
     <div class="titulo-seccion" id="desarrollo">
       <h2>Desarrollo</h2>
 	<p>Revisa los siguiente información para entender mejor la comunicación visual.</p>
@@ -250,19 +269,20 @@
     </div>
     <section class="galeria-multimedia">
       <figure class="galeria-item">
-        <img src="images/ejemplo 1.jpg" alt="">
+        <img src="images/ejemplo 1.jpg" alt="Ejemplo" onclick="abrirLightbox images/ejemplo 1.jpg">
         <figcaption>Ejemplo</figcaption>
       </figure>
       <figure class="galeria-item">
-        <img src="images/ejemplo 2.jpg" alt="">
+        <img src="images/ejemplo 2.jpg" alt="Ejemplo" data-grande="images/ejemplo 2.jpg">
         <figcaption>Ejemplo</figcaption>
       </figure>
       <figure class="galeria-item">
-        <img src="images/ejemplo 1.jpg" alt="">
+        <img src="images/ejemplo 1.jpg" alt="Ejemplo" data-grande="images/ejemplo 1.jpg">
         <figcaption>Ejemplo</figcaption>
       </figure>	
     </section>
 	  
+    <!-- CONCLUSIÓN -->	  
     <div class="titulo-seccion" id="conclusion">
       <h2>Conclusión</h2>
 	<p>Recuerda que el diseño requiere de un cierre para la efectividad del mensaje.</p>
@@ -331,12 +351,6 @@
       <a href="https://www.youtube.com" target="_blank" rel="noopener"><img src="img/yt.svg" alt="YouTube"></a>
     </div>
   </footer>
-
-  <!-- Lightbox de la galería -->
-  <div class="lightbox" id="lightbox" aria-hidden="true">
-    <button class="lightbox__cerrar" id="lightbox-cerrar" aria-label="Cerrar">×</button>
-    <img class="lightbox__img" id="lightbox-img" src="" alt="Imagen ampliada">
-  </div>
 
   <script src="js/main.js"></script>
 </body>
